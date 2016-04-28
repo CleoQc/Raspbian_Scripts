@@ -34,4 +34,4 @@ sudo systemctl daemon-reload && sudo systemctl enable vncserver@1.service
 sudo systemctl start vncserver@1.service
 
 # cleanup
-rm tightvncserver.service
+rm vncserver.service
