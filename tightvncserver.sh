@@ -29,7 +29,7 @@ chmod +x ./.vnc/xstartup
 
 #install systemd service
 wget https://raw.githubusercontent.com/CleoQc/Raspbian_Scripts/master/vncserver.service
-sudo cp tightvncserver.service /etc/systemd/system/vncserver@.service
+sudo cp vncserver.service /etc/systemd/system/vncserver@.service
 sudo systemctl daemon-reload && sudo systemctl enable vncserver@1.service
 sudo systemctl start vncserver@1.service
 
