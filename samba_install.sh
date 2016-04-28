@@ -9,9 +9,10 @@
 ########################################################################
 
 DEFAULT_PWD=$1
-if [[ -z "${DEFAULT_PWD// }" ]] then
+if [[ -z "${DEFAULT_PWD// }" ]] ; then
 echo "Samba needs a password"
 exit
+fi
 
 ########################################################################
 # Installing Samba
