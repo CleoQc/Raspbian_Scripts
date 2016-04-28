@@ -32,3 +32,6 @@ wget https://raw.githubusercontent.com/CleoQc/Raspbian_Scripts/master/jessie_upd
 sudo cp tightvncserver.service /etc/systemd/system/vncserver@.service
 sudo systemctl daemon-reload && sudo systemctl enable vncserver@1.service
 sudo systemctl start vncserver@1.service
+
+# cleanup
+rm tightvncserver.service
